@@ -1,0 +1,39 @@
+#body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+}
+div{
+    /* content: whidht (largura) & height (altura) */
+    width: 500px;
+    height: 500px;
+
+    /* padding: preenchimento*/
+    padding: 10px;
+
+    background: red;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+
+    /*border: bordar*/
+    border-left: 10px dotted rgba(0,0,0,0.8);
+
+    /*margim : margem*/
+    /*margin: 0 auto;*/
+
+    /* mudar os limites da caixa*/
+    box-sizing: border-box;
+}
+span{
+    display: inline-block;
+    color: white;
+    background-color: red;
+    
+    margin-left:10px; 
+}

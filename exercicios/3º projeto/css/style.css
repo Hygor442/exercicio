@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: 100%;
+}
+body{
+    background-image: linear-gradient(to right, #A5AFB0,#434240);
+}
+nav,ul{
+    list-style: none;
+}
+
+/*Header*/
+header{
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px 50px;
+    font-family: 'Permanent Marker', cursive;;
+    
+}
+header picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header picture img{
+    width: 300px;
+    margin-bottom: 25px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+header li{
+    padding: 10px;
+    text-transform: uppercase;
+}
+header hr{
+    margin: auto;
+    width: 3px;
+    height: 20px;
+    background-color: white;
+    border: none;
+}
+header h3{
+    text-align: center;
+}
+header ul li:only-child{
+    margin-left: 0;
+}
+header ul li:last-child{
+    margin-left: 0;
+}
+/*@media(max-width:700px){
+    header picture img{
+        width:200px;
+    }
+    header ul{
+        margin:auto;
+        padding: 40px;
+    }
+    header li{
+       font-size: 0.5rem;
+       padding-left: 1px;
+    }
+    header h3{
+        font-size: 0.6rem;
+    }
+}*/
+/*Vantagens*/
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 50px ;
+    background-color: white;
+    margin-top: 25px;
+}
+.vantagens p{
+    text-align: justify;
+    margin-bottom: 35px;
+    max-width: 800px;
+}
+.vantagens .grid{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.vantagens .grid li{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.vantagens .grid li h4{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.vantagens .centro{
+    text-align: center;
+}
+/*icons*/
+.ok{
+    color: green;
+}
+.endereço{
+    color: red;
+}

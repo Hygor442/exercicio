@@ -1,0 +1,38 @@
+/*position: fixed*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background: green;
+    height: 175px;
+    width: 700px;
+    margin: auto;
+
+}
+h1{
+    text-align: center;
+}
+nav{
+    color: honeydew;
+    background: red;
+}
+main{
+    text-align: justify;
+    padding-left: 10px;
+    width: 700px;
+    margin-top: 10px;
+    background: yellow;
+    border: 2px solid blanchedalmond;
+}
+.box{
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+}

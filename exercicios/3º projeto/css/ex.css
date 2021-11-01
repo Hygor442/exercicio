@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: 100%;
+}
+nav,ul{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to right, #A5AFB0,#434240);
+}
+/*Vantagens*/
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 50px ;
+    background-color: white;
+}
+.vantagens p{
+    text-align: justify;
+    margin-bottom: 35px;
+    max-width: 800px;
+}
+.vantagens .grid{
+    display: flex;
+    width: 100%;
+}
+.vantagens .grid li{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.vantagens .grid li h4{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.vantagens .centro{
+    text-align: center;
+}
+/*icons*/
+.ok{
+    color: green;
+}
+.endereço{
+    color: red;
+}

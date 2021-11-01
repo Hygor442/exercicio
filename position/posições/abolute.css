@@ -1,0 +1,32 @@
+/*position: absolute*/
+.box{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    position: relative;
+}
+.op1, .op2, .op3, .op4{
+    width: 150px;
+    height: 150px;
+}
+.op1{
+    background-color: blueviolet;
+    position: absolute; 
+    left: 0;
+}
+.op2{
+    background-color: brown;
+    position: absolute;
+    right: 0;
+}
+.op3{
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 0;
+}
+.op4{
+    background-color: darkgray;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

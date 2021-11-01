@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    box-sizing: border-box;
+    text-align: center;
+    background: darkgrey;
+    color: white;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+}
+h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+nav{
+    background-color: rgba(147, 125, 125, 0.544);
+    padding-bottom: 10px;
+}
+header a{
+    font-size: 20px;
+    color: white;
+    padding: 50px;
+    text-decoration: none;
+}
+
+main{
+    background: darkgrey;
+    width: 55vw;
+    height: 100vh;
+    text-align: justify;
+    margin: auto;
+    box-sizing: border-box;
+}
+main h2{
+    padding-left: 15px;
+}
+main p{
+    padding: 5px;
+}
+.conjunto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.janelas{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 50px;
+    
+}
+.janelas.jenela1{
+    background: green ;
+    border-top: none;
+    border-bottom: none;
+}
+.janelas.janela2{
+    background: red;
+}
+.janelas.janela3{
+    background: yellow;
+    border-top: none;
+    border-bottom: none;
+}
+footer{
+    background: rgba(147, 125, 125, 0.544);
+    width: 55vw;
+    height: 30vh;
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+footer h2{
+    text-align: center;
+}
+footer li{
+    list-style: none;
+}
+.fim{
+    background: rgb(147, 138, 138);
+    text-align: center;
+}
+.fim a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+}
+.volta{
+    margin: 5px auto;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.volta a{
+    text-decoration: none;
+    color: black;
+}
