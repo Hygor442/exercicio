@@ -1,0 +1,95 @@
+/*
+#O grid:
+- Bidimensional
+- Divisão de toda a pagina em linhas e colunas
+- Coloca elementos onde quiser nessa divisão
+
+#Grid ou Flexbox?
+- Grid: duas dimensões (colunas e linhas)
+- Flexbox: uma dimensão (ou coluna ou linha)
+- Verificar quais navegadores ainda não estão aceitando o Grid
+
+#Propriedades:
+Vamos separar em 2 grupos:
+'conteiner' e 'item(s)'
+
+#conteiner:
+- display:grid; - inicia o conteiner
+- grid-template-columns; - fatiamento de colunas, quantas colunas.
+- grid-template-rows; - fatiamento de linhas, quantas linhas
+- grid- gap - espaçamneto
+    - grid-row-gap
+    - grid-column-gap
+- grid-template-areas; - delimita areas
+
+#item(s):
+- grid-column - pocionamento da coluna
+    - grid-column-start
+    - grid-column-end
+- grid-row - pocionamento da linha
+    - grid-row-reverse
+    - grid-row-end
+- grid-area - posicianamento das areas
+
+#Grid: Alinhamentos
+- Exitem 6 propriedades para alinhamento:
+1. justify-content;
+2. align-content;
+3. justify-items;
+4. align-items;
+5. justify-self;
+6. align-self;
+
+- Vamos separa-los em 2 grupos:
+1 'justify' e 'align'
+2. 'content', 'items' e 'self'
+
+
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8e4284;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h" "m a" "f f";
+}
+
+header{
+    background-color: yellow;
+    grid-area: h;
+}
+main{
+    background-color: red;
+    grid-area: m;
+}
+aside{
+    background-color: blue;
+    grid-area: a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cont{
+    width: 100px;
+    height: 100px;
+    border: solid 5px black;
+    margin-bottom: 5px;
+}
+.cont:nth-child(1){
+    background-color: brown;
+}
+.cont:nth-child(2){
+    background-color: yellow;
+}
+footer{
+    background-color: coral;
+    grid-area: f;
+}

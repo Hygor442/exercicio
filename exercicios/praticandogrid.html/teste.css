@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.conteiner{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.conteiner picture{
+    display: inline-block;
+}
+picture{
+    height: 100%;
+    width: 100%;
+}
+picture iframe{
+    height: 250px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}

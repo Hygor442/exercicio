@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .load-wrapp{
+            float: left;
+            width: 200px;
+            height: 150px;
+            margin: 0 10px 10px 0;
+            padding: 20px 20px 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #d8d8d8;
+        }
+        .load-wrapp p{
+            padding: 0 0 20px ;
+        }
+        .load-wrapp:last-child{
+            margin-right: 0;
+        }
+        .line{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: #4b9cdb;
+        }
+        .load-2 .line:nth-last-child(1){
+            animation: "loadingB" 1.5s 1s infinite;
+        }
+        .load-2 .line:nth-last-child(2){
+            animation: "loadingB" 1.5s 0.5s infinite;
+        }
+        .load-2 .line:nth-last-child(3){
+            animation: "loadingB" 1.5s 0s infinite;
+        }
+        @keyframes loadingB {
+            0%{
+                width: 15px;
+            }
+            50%{
+                width:35px;
+            }
+            100%{
+                width: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="load-wrapp">
+        <div class="load-2">
+            <p>Loading</p>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</body>
+</html>

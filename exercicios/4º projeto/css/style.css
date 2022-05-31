@@ -1,0 +1,16 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header-top*/
+.header-top{
+    background-color: blue;
+}
+.header-top img{
+    height: 15rem;
+    width: 15rem;
+    background-color: red;
+}

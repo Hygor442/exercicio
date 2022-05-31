@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: grey;
+        }
+        .box{
+            background: rgba(255, 255, 255, 0.163);
+            height: 60rem;
+            width: 35rem;            
+            color: white;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .border{
+            margin: 25px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            width: 10rem;
+            height: 10rem;
+        }
+        .b1{
+            background-color: red;
+            border-radius: 20px;
+        }
+        .b2{
+            background-color: royalblue;
+            border: dotted black 5px;
+        }
+        .b3{
+            background-color: rebeccapurple;
+            border:dashed;
+        }
+        .b4{
+            background-color: springgreen;
+            border: solid pink 5px;
+        }
+        .b5{
+            background-color: crimson;
+            border: double 5px black;
+        }
+        .b6{
+            background-color: deepskyblue;
+            border: groove goldenrod 5px;
+        }
+        .b7{
+            background-color: gold;
+            border:ridge blue 5px;
+        }
+        .b8{
+            background-color: teal;
+            border:inset white 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <div class="box">
+        <div class="border b1">Bordas <br> Redondas</div>
+        <div class="border b2">Bordas <br> Pontilhada</div>
+        <div class="border b3">Bordas <br> Tracejada</div>
+        <div class="border b4">Bordas <br> Solida</div>
+        <div class="border b5">Bordas <br> Dupla</div>
+        <div class="border b6">Bordas <br> Entalhada</div>
+        <div class="border b7">Bordas <br> em Resalto</div>
+        <div class="border b8">Bordas <br> em Baixo relevo</div>
+    </div>
+</body>
+</html>
