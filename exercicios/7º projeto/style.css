@@ -1,0 +1,151 @@
+:root{
+    --primaria:rgba(44, 75, 114, 1);
+    --secundaria:rgba(37, 59, 89, 1);
+    --terciaria:rgba(153, 180, 191, 1);
+    --letrasPlace:rgba(216, 182, 13, 1);
+    --letras:rgba(191, 141, 47, 1);
+
+    --fontPrincipal:'Nunito', sans-serif;;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontPrincipal);
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background: var(--secundaria);
+}
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma{
+    background: var(--terciaria);
+    width: 80vw;
+    height: 70vh;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.conteiner .formulario{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteiner .box{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner .formulario h2{
+    font-weight: 700;
+    color: var(--secundaria);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+hr{
+    border: solid 1px black;
+    width: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.conteiner .box label{
+    padding-bottom: 5px;
+}
+
+.conteiner .box input{
+    color: var(--primaria);
+    height: 1.7rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid var(--secundaria);
+    border-radius: 2px;
+}
+
+.conteiner .box .botao{
+    color: var(--secundaria);
+    height: 1.7rem;
+    margin-top: 0.9rem;
+    border: none;
+    background: #fff;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.box .botao:hover{
+    background: var(--secundaria);
+    color: #fff;
+}
+
+.conteiner .imagem{
+    width: 50%;
+    background: url(img/Humaaans\ -\ 3\ Characters.png) no-repeat center;
+    background-size: cover;
+}
+
+
+@keyframes morph{
+    0%,100%{
+        border-radius: 42% 56%  72% 28% / 42% 42% 56% 48;
+    }
+    33%{
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66%{
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
+
+.blob1,
+.blob2,
+.blob3,
+.blob4,
+.blob5,
+.blob6,
+.blob7{
+    position: absolute;
+    overflow: hidden;
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: var(--terciaria);
+    animation: morph 3.75s linear infinite;
+}
+.blob1{
+    top: -0.2rem;
+}
+.blob2{
+    top: 5.1rem;
+}
+.blob3{
+    top: 10.2rem;
+}
+.blob4{
+    top: 15rem;
+}
+.blob5{
+    top: 20rem;
+}
+.blob6{
+    top: 25rem;
+}
+.blob7{
+    top: 30rem;
+}
