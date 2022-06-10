@@ -79,6 +79,10 @@ hr{
     border-radius: 2px;
 }
 
+.conteiner .box input:focus{
+    border: var(--primaria);
+}
+
 .conteiner .box .botao{
     color: var(--secundaria);
     height: 1.7rem;
@@ -148,4 +152,72 @@ hr{
 }
 .blob7{
     top: 30rem;
+}
+
+.modal-conteiner{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteiner.mostrar{
+    display: flex;
+}
+
+.modal{
+    background: white;
+    width: 40%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid var(--primaria);
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+}
+
+.modal h3{
+    font-size: 1.5rem;
+}
+
+.modal p{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.mostrar .modal{
+    animation:  modal .3s;
+}
+
+.fechar{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: var(--primaria);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+    font-size: 1.2em;
 }

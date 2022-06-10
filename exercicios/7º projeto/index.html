@@ -18,14 +18,14 @@
                 <hr>
                 <div class="box">
                     <label>Nome*</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" autocomplete="off">
                     <label>Sobrenome*</label>
-                    <input type="text" id="sobrenome">
+                    <input type="text" id="sobrenome" autocomplete="off">
                     <label>E-mail*</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" autocomplete="off">
                     <label>Senha*</label>
-                    <input type="password" name="" id="">
-                    <button class="botao" id="bottom">Cadastrar</button>
+                    <input type="password" name="" id="senha" autocomplete="off">
+                    <button class="botao" id="bottom" onclick="verificar()">Cadastrar</button>
                 </div>
             </div>
             <div class="blob1"></div>
@@ -39,7 +39,14 @@
                 </div>
         </div>
 
-    
+        <div id="modal-promocao" class="modal-conteiner">
+            <div class="modal">
+                <button class="fechar">X</button>
+                <h3>Atenção</h3>
+                <p id="text"></p>
+            </div>
+        </div>
+
     <script src="script.js"></script>
 </body>
 </html>
