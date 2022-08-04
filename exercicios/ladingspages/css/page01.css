@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imgs/fundo01.jpg);
+    background-size: cover;
+}
+#body{
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+.containerNavBar{
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
+}
+.NavBar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    font-family: 'Poppins', sans-serif;
+}
+.NavBar ul{
+    list-style: none;
+    display: flex;
+}
+.NavBar ul li{
+    padding-left: 20px;
+    cursor: pointer;
+}
+.NavBar ul li:nth-last-child(1){
+    padding-right: 40px;
+}
+
+.text{
+    width: 40%;
+    color: #fff;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    position: absolute;
+    top: 35%;
+}
+.text p{
+    font-size: 4rem;
+}
+
+.container_footer{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container_footer .barra{
+    width: 150px;
+    height: 3px;
+    margin-right: 5px;
+    background-color: white;
+}
+.container_footer .barra:nth-last-child(1){
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.info{
+    color: white;
+    font-family:'Poppins', sans-serif; 
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-facebook,
+.fa-instagram,
+.fa-twitter{
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+    margin-left: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.info i{
+    padding-right: 5px;
+}
