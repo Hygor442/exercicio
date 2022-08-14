@@ -66,6 +66,7 @@ msgEnviada.addEventListener("click", (e) => {
     else{
         alert(`${firstNameValue} ${lastNameValue} sua mensagem foi enviada com sucesso`);
     }
+    
 });
 msgResetada.addEventListener("click", (e)=>{
     e.preventDefault();
@@ -75,3 +76,6 @@ msgResetada.addEventListener("click", (e)=>{
     emailInput.value = "";
     textMsg.value = "";
 });
+
+const element = document.querySelector("body").scrollWidth;
+alert(`A sua tela tem ${element}px de comprimento`);
