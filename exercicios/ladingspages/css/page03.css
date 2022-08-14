@@ -11,12 +11,15 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100%;
+    position: relative;
 }
 .title{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     
     padding-top: 60px;
     border-bottom: 4px solid #f4f4f4;
@@ -47,11 +50,7 @@ body{
     position: relative;
 }
 /*HEADER*/
-.container-header{
-    /*
-    height: 100vh;
-    width: 100vw;
-    */
+.container-header{  
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -185,6 +184,7 @@ body{
 }
 .icons ion-icon{
     font-size: 30px;
+    transition: .2s ease-in;
 }
 .icons span{
     display: inline-block;
@@ -192,7 +192,51 @@ body{
     padding-left: 10px;
 }
 /*GALLERY*/
-
+main .container-item:nth-child(2){
+    height: auto;
+}
+#images-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+#images-grid .img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#images-grid .img img{
+    width: 100%;
+    height: 300px;
+}
+.img.im{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#gallery nav{
+    margin-top: 20px;
+}
+#gallery nav ul{
+    display: flex;
+}
+#gallery nav ul li{
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 2px solid #f4f4f4;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+#gallery nav ul li.active{
+    background: #f4f4f4;
+    color: #010101;
+}
+#gallery nav ul li:nth-child(1){
+    margin-left: 0;
+}
 
 /*SERVICES*/
 #service-icons{
@@ -210,7 +254,7 @@ body{
     width:auto;
     height: auto;
 }
-.box{ /*Precisa alinhas corretamente os titulos e ajeitar o box dos cards gereia em 50%*/
+.box{
     display: flex;
     align-items: top;
     flex-direction: column;
@@ -232,7 +276,141 @@ body{
 .box > ion-icon{
     font-size: 30px;
     margin: 0 auto;
+    transition: .2s ease-in;
+}
+.box > ion-icon:hover,.icons ion-icon:hover{
+    transform: rotate(45deg);
 }
 /*FOOTER*/
-
+footer{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
 /*CONTACT*/
+footer .title{
+    margin-bottom: 40px;
+}
+footer .container-input{
+    display: flex;
+}
+footer .input-group{
+    position: relative;
+    margin-right: 10px;
+}
+footer .input{
+    padding: 15px;
+    border: none;
+    width: 298px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: #f4f4f4;
+    background-color: transparent;
+    outline: 2px solid #f4f4f4;
+}
+footer .input-label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform:  translate(10px, 10px);
+    transition: transform .25s;
+}
+.input:focus + .input-label,
+.input:valid + .input-label{
+    transform: 
+    translate(10px, -14px) 
+    scale(.8);
+    padding: 5px;
+    background-color:#f4f4f4;
+    color: #010101;
+    border-radius: 4px;
+}
+.input:is(:focus, :valid){
+    outline-color: #d1c5fc;
+}
+.email{
+    margin-top: 15px;
+}
+.input.cont-email{
+    width: 100%;
+}
+
+.text{
+    margin: 20px 0;
+    max-width: 100%;
+    max-height: 250px;
+    min-height: 100px;
+}
+.input-label.msg{
+    top: -15px;
+    left: 0;
+}
+footer .msg-enviada, .msg-resetada{
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 12px;
+}
+footer .msg-enviada{
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border: 2px solid #f4f4f4;
+    margin-right: 10px;
+    
+}
+footer .msg-resetada{
+    background: transparent;
+    color: #f4f4f4;
+    border: 2px solid #f4f4f4;
+    padding: 10px;
+}
+.msg-enviada:hover{
+    background: transparent;
+    color: #f4f4f4;
+}
+.msg-resetada:hover{
+    background: #f4f4f4;
+    color: #010101;
+}
+footer .icons-contact{
+    margin-top:40px ;
+    position: absolute;
+    bottom: 0;
+}
+footer ion-icon{
+   font-size: 25px;
+   padding-right: 5px;
+   cursor: pointer;
+}
+
+.face:hover{
+    color: rgb(80, 80, 203);
+}
+.twiter:hover{
+    color: rgb(31, 132, 173);
+
+}
+.icon-email:hover{
+    color: rgb(215, 63, 63);
+}
+.linked:hover{
+    color: rgb(50, 50, 155);
+}
+
+.up{
+    background: transparent;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid #f4f4f4;
+    width: 40px;
+    height: 40px;
+    color: #f4f4f4;
+    font-size: 20px;
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+    padding-left: 5px;
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+}

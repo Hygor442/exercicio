@@ -19,10 +19,10 @@
             </div>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li id="informacoes">About</li>
+                    <li id="galeria">Gallery</li>
+                    <li id="servicos">Services</li>
+                    <li id="contato">Contact</li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,7 @@
                     <p>
                         High-quality photagraphy is critical in capturing and engaging the attetion <br> af your online audience.
                     </p>
-                    <ul class="icons">
+                    <div class="icons">
                         <div class="icon">
                             <ion-icon name="calendar-outline"></ion-icon><span>309 <br> <small>Completed Projects</small></span>
                         </div>
@@ -51,12 +51,53 @@
                         <div class="icon">
                             <ion-icon name="happy-outline"></ion-icon><span>289 <br> <small>Happy Clients</small></span>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
             <div class="container-item">
                 <div class="container-conteudo" id="gallery">
                     <h2 class="title">Gallery</h2>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="btn active" data-card="todos">all</li>
+                                <li class="btn" data-card="natureza">Nature</li>
+                                <li class="btn" data-card="comida">Food</li>
+                                <li class="btn" data-card="retrato">Portrait</li>
+                                <li class="btn" data-card="casamento">Wedding</li>
+                                <li class="btn" data-card="esporte">Sport</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="images-grid">
+                        <div class="img casamento">
+                            <img src="imgs/imagens_projeto03/casamento.jpg" alt="">
+                        </div>
+                        <div class="img comida">
+                            <img src="imgs/imagens_projeto03/comida01.jpg" alt="">
+                        </div>
+                        <div class="img im natureza">
+                            <img src="imgs/imagens_projeto03/nature01.jpg" alt="">
+                        </div>
+                        <div class="img comida">
+                            <img src="imgs/imagens_projeto03/comida02.jpg" alt="">
+                        </div>
+                        <div class="img retrato">
+                            <img src="imgs/imagens_projeto03/retrato01.jpg" alt="">
+                        </div>
+                        <div class="img im natureza">
+                            <img src="imgs/imagens_projeto03/nature02.jpg" alt="">
+                        </div>
+                        <div class="img retrato">
+                            <img src="imgs/imagens_projeto03/retrato02.jpg" alt="">
+                        </div>
+                        <div class="img retrato">
+                            <img src="imgs/imagens_projeto03/retrato03.jpg" alt="">
+                        </div>
+                        <div class="img im esporte">
+                            <img src="imgs/imagens_projeto03/esporte.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container-item">
@@ -118,25 +159,45 @@
             <div class="container-item">
                 <div class="container-conteudo">
                     <h2 class="title">contact</h2>
-                    <label>First Name</label>
-                    <input type="text" name="" id="">
-                    <label>Last Name</label>
-                    <input type="text" name="" id="">
-                    <br>
-                    <label>Email</label>
-                    <input type="email">
-                    <label>Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="msg-enviada"></button>
-                    <button class="msg-resetada"></button>
+                    <div class="container-input">
+                        <div class="input-group">
+                            <input type="text" id="first-name" required class="input">
+                            <label for="name" class="input-label">First Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="last-name" required class="input">
+                            <label for="name" class="input-label">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="input-group email">
+                        <input type="text" id="email" required class="input cont-email">
+                        <label for="email" class="input-label">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="" id="textMsg" cols="82" rows="12" class="text"></textarea>
+                        <label for="text-cont" class="input-label msg">Message</label>
+                    </div>
+
+                    <button class="msg-enviada">Send Message</button>
+                    <button class="msg-resetada">Reset</button>
+
+                    <div class="icons-contact">
+                        <ion-icon name="logo-facebook" class="face"></ion-icon>
+                        <ion-icon name="logo-linkedin" class="linked"></ion-icon>
+                        <ion-icon name="logo-twitter" class="twiter"></ion-icon>
+                        <ion-icon name="mail-outline" class="icon-email"></ion-icon>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="icons-contact">
-            
-        </div>
+        <button class="up" id="up-down">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
     </footer>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/page03.js"></script>
 </body>
 </html>
