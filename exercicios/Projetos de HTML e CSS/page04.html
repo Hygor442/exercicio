@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 04</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações</p>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Name</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Last name</label>
+                <input type="text" name="sobrenome" id="sobrenome">                
+            </div>
+        </fieldset>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>De qual lado da aplicação você desenvolve</label>
+            <label>
+                <input type="radio" name="devweb" value="Frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack" checked>Fullstack
+            </label>
+        </div>
+        <div>
+            <label>Senioridade</label>
+            <select id="senioridade">
+                <option value="" selected disabled>Selecione</option>
+                <option value="">Junior</option>
+                <option value="">Pleno</option>
+                <option value="">Senior</option>
+            </select>
+        </div>
+        <fieldset>
+            <label>Selecione as suas tecnologias</label><br><br>
+            <input type="checkbox" name="tec01" id="tec01" value="HTML">
+            <label for="tec02">HTML</label>
+            <input type="checkbox" name="tec02" id="tec02" value="CSS">
+            <label for="tec03">CSS</label>
+            <input type="checkbox" name="tec03" id="tec03" value="JS">
+            <label for="tec04">JS</label>
+            <input type="checkbox" name="tec04" id="tec04" value="JAVA">
+            <label for="tec05">JAVA</label>
+            <input type="checkbox" name="tec05" id="tec05" value="PHP">
+            <label for="tec06">PHP</label>
+            <input type="checkbox" name="tec06" id="tec06" value="C#">
+            <label for="tec07">C#</label>
+            <input type="checkbox" name="tec07" id="tec07" value="MYSQL">
+            <label for="tec07">MYSQL</label>
+        </fieldset>
+        <div>
+            <br>
+            <label>Conte um pouco da sua experiência</label>
+            <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
