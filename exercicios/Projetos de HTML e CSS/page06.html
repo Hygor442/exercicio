@@ -14,20 +14,22 @@
     <link rel="stylesheet" href="css/page06.css">
 </head>
 <body>
-   <header class="header"> <!--azul-->
+   <header class="header" id="inicio"> <!--azul-->
         <div class="header-nav">
+            <div class="logo-header">
+                <img src="imgs/img_proj06/modsist1-removebg-preview.png" alt="">
+            </div>
             <nav>
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">sobre</a></li>
-                    <li><a href="">alunos</a></li>
-                    <li><a href="">local</a></li>
-                    <li><a href="">contato</a></li>
+                    <li id="home"><a>home</a></li>
+                    <li id="sobre"><a>sobre</a></li>
+                    <li id="alunos"><a>alunos</a></li>
+                    <li id="local"><a>local</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header-frase">
-            <p>Do cursinho pré vestibular para à faculade</p>
+            <p>Do cursinho pré vestibular para à faculade!</p>
         </div>
         <div class="header-container">
             <div class="header-imgLogo">
@@ -40,7 +42,7 @@
    </header>
    <main class="main">
         <!--vantagens--> <!--branco-->
-        <div class="main-diferencial">
+        <div class="main-diferencial" id="diferencial">
             <h2 class="title">Conheça nosso diferencial</h2>
             <div class="container-cards">
                 <div class="cards card">
@@ -75,7 +77,7 @@
             </div>
         </div>
         <!--card de venda do curso junto com o relato dos alunos--> <!--azul-->
-        <div class="main-relato-preco">
+        <div class="main-relato-preco" id="card-aluno">
             <h2 class="title">Venha ser um dos nossos alunos!</h2>
             <div class="container">
                 <!--parte dos relatos-->
@@ -169,7 +171,7 @@
         </div>
 
         <!--local--> <!--branco-->
-        <div class="local">
+        <div class="local" id="localizacao">
             <div class="point">
                 <div class="marker">
                     <svg width="50px" height="72px" viewBox="0 0 48 72">
@@ -181,6 +183,7 @@
             <div class="endereco">
                 <h5 class="title">Onde estamos?</h5>
                 <div class="container-end">
+                    <span>Santa Inês</span>
                     <span>Rua do Comercio</span>
                     <span>Empresarial João Rolin</span>
                     <span>4º andar, sala xxx</span>

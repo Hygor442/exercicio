@@ -7,6 +7,85 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.header {
+  max-width: 100vw;
+  height: 100vh;
+  background: #1AA3D9;
+}
+.header .header-nav {
+  width: 100%;
+  height: 50px;
+  padding: 15px 10px;
+  background: #1A90D9;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-nav .logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-nav .logo-header img {
+  width: 150px;
+}
+.header .header-nav nav {
+  display: block;
+  height: 100%;
+}
+.header .header-nav nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header-nav nav ul li {
+  margin-right: 40px;
+}
+.header .header-nav nav ul li:hover {
+  border-bottom: 3px solid #fff;
+}
+.header .header-nav nav ul li a {
+  color: #dce8e0;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.header .header-frase {
+  position: absolute;
+  top: 180px;
+  left: 170px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.header .header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+.header .header-container .header-imgLogo {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.header .header-container .header-imgLogo img {
+  margin-left: 200px;
+  height: 210px;
+}
+.header .header-container .header-imgAluno {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header .header-container .header-imgAluno img {
+  height: 500px;
+}
+
 .main {
   max-width: 100vw;
   display: flex;
@@ -23,7 +102,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .main .main-diferencial h2 {
   text-transform: uppercase;
@@ -34,6 +113,7 @@
   margin-top: 10px;
   margin-bottom: 5px;
   text-align: center;
+  margin-top: 60px;
   margin-bottom: 15px;
 }
 .main .main-diferencial .container-cards {
